@@ -32,6 +32,8 @@ const LoginPage = () => {
                 // Store the token in session storage
                 sessionStorage.setItem('token', token);
 
+                window.dispatchEvent(new Event('sessionStorageChange'));
+
                 // Successful login logic (redirect, state update, etc.)
                 navigate('/dashboard')
                 console.log('Login successful');
