@@ -1,0 +1,150 @@
+.dashboard-container {
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product-card img {
+    max-height: 200px;
+    object-fit: scale-down;
+  }
+  
+  .product-card h3 {
+    margin-top: 10px;
+  }
+  
+  .product-card p {
+    margin: 5px 0;
+  }
+
+  .quantity-selector {
+    margin-top: 10px;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  
+  
+  .quantity-controls input {
+    width: 40px;
+    margin: 0 5px;
+    height: 25px;
+    text-align: end;
+  }
+  
+  .add-to-cart-btn {
+    background-color: white;
+    color: #1976d2;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px !important;
+    height: 50%;
+    margin-left: 0px !important;
+    border: 1px solid #1976d2 !important;
+
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #0055CC !important;
+    color: white ;
+  }
+
+  .add-to-cart-wrapper{
+    display: flex;
+    flex-direction: column;
+    /* opacity: 0;
+    transition: opacity 0.3s ease; */
+  }
+
+  .product-card-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .quantity-button{
+    height: 30px !important;
+    min-width: 15px !important;
+    width: 30px !important;
+    margin-left: 0px !important;
+    background-color: white !important;
+    color: #1976d2 !important;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #1976d2 !important;
+    box-shadow: none !important;
+
+  }
+
+  .quantity-button:hover {
+    background-color: #0055CC !important;
+    color: white !important ;
+  }
+
+  .product-conten{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .MuiAlert-root {
+    width: 400px; 
+  }
+  
+  .snackbar-bottom-center {
+    position: fixed;
+    bottom: 16px; 
+    right: 16px; 
+  }
+
+  .snackbar-alert{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 22px !important;
+    height: 40px !important;
+  }
+
+  .rating-overlay {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 0 5px 0 5px; /* Adjust border-radius as needed */
+  }
+
+  .truncate-hover-text {
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    display: inline-block;
+    transition: max-width 0.3s ease; /* Smooth transition for hover effect */
+  }
+  /* .product-card:hover .add-to-cart-wrapper {
+    opacity: 1;
+  } */
+  

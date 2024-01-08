@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import LoginPage from './components/Login/Login';
+import Dashboard from './components/Dashboard/Dashboard';
+import ProductDetails from './components/ProductDetails/ProductDetails';
+import Navbar from './components/Navbar/Navbar';
+import Cart from './components/Cart/Cart';
 
-function App() {
+const ProtectedRoute = ({ element }) => {
+  const token = sessionStorage.getItem('token');
+
+  return token ? element : <Navigate to="/login" />;
+};
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route
+          path="/"
+          element={<ProtectedRoute element={<Dashboard />} />}
+        />
+        <Route path="/login" element={<LoginPage />} />
+        <Route
+          path="/dashboard"
+          element={<ProtectedRoute element={<Dashboard />} />}
+        />
+        <Route
+          path="/product/:id"
+          element={<ProtectedRoute element={<ProductDetails />} />}
+        />
+        <Route
+          path="/cart"
+          element={<ProtectedRoute element={<Cart />} />}
+        />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
+

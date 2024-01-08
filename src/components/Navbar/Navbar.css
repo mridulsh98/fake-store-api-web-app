@@ -1,0 +1,27 @@
+.product-dashboard-link{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: inherit;
+    align-items: center;
+    
+}
+
+.typography{
+    color: white;
+    font-weight: 500;
+    font-size: 25px !important;
+}
+
+.toolbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.login-toolbar{
+    display: flex;
+    flex-direction: row;
+}

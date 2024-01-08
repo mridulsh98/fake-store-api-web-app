@@ -1,0 +1,39 @@
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .cart-details {
+    flex: 1;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .cart-item-image {
+    width: 70px; /* Set the width as needed */
+    height: auto;
+    margin-right: 16px;
+  }
+  
+  .cart-total {
+    margin-top: 16px;
+    font-size: 20px;
+  }
+
+  .delete-button {
+    align-items: right;
+  }
+
+  .cart-item-details {
+    width: 90%;
+  }
+  
