@@ -25,11 +25,20 @@ const Navbar = () => {
     }, [])
 
     useEffect(() => {
-        const existingToken = (sessionStorage.getItem('token')) || null;
+        const handleStorageChange = () => {
+            const existingToken = (sessionStorage.getItem('token')) || null;
 
-        if (existingToken !== null) {
-            setIsVerified(true)
+            if (existingToken !== null) {
+                setIsVerified(true)
+            }
         }
+        handleStorageChange()
+        window.addEventListener('sessionStorageChange', handleStorageChange);
+
+        // Clean up the event listener when the component unmounts
+        return () => {
+            window.removeEventListener('sessionStorageChange', handleStorageChange);
+        };
     }, [])
 
     const LoginNavbar = () => {
