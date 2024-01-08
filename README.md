@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Fake Store Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Fake Store Web App, a simple e-commerce application that utilizes the Fake Store API to simulate product data. This web app provides basic e-commerce functionalities such as user login, product browsing, and shopping cart management.
 
-## Available Scripts
+## Usage
 
-In the project directory, you can run:
+### Installation
 
-### `npm start`
+Before starting, make sure you have [Node.js](https://nodejs.org/) and [Yarn](https://yarnpkg.com/) installed on your machine.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Clone the repository
+```bash
+git clone https://github.com/mridulsh98/fake-store-api-web-app.git
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Navigate to the project directory
+cd fake-store-api-web-app
 
-### `npm test`
+# Install dependencies
+yarn install
+# Start the development server
+yarn start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Fake Store Web App
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Welcome to the Fake Store Web App, a simple e-commerce application that utilizes the Fake Store API to simulate product data. This web app provides basic e-commerce functionalities such as user login, product browsing, and shopping cart management.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Login (Mandatory)**
+   - To use the Fake Store Web App, user login is mandatory. Follow these steps:
+     - Open the web app in your browser.
+     - You will be directed to the login page.
+     - Enter your credentials from Fake API.
+     - After successful login, you will have access to the full features of the application.
 
-### `npm run eject`
+2. **Products Dashboard**
+   - Once logged in, you will be directed to the Products Dashboard. Here you can:
+     - View a grid of available products.
+     - Click on a product to see more details.
+     - Add products to your shopping cart.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Product Details Page**
+   - Clicking on a product in the Products Dashboard will take you to the Product Details Page. Here you can:
+     - View detailed information about the selected product.
+     - Adjust the quantity and add the product to your cart.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. **Cart View**
+   - Navigate to the Cart view to:
+     - View all the products added to your cart.
+     - Adjust the quantity or remove items.
+     - See the total price of your selected items.
